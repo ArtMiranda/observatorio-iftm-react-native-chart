@@ -32,6 +32,15 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="graficos"
+        options={{
+          title: 'Consulta de Docentes',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'bar-chart' : 'bar-chart-outline'} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
